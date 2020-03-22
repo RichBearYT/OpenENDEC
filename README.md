@@ -1,8 +1,8 @@
 # OpenENDEC
-Open source digital ENDEC Emergeny Alert System Controller
+Open source digital ENDEC Emergency Alert System Controller
 
 #### ENDEC News Feed Relay
-`endec.py` is a simple ENDEC to webhook relay. It can be easily modified to include other digital output devices such as SMTP or SMS.
+`endec.py` is a simple ENDEC serial newsfeed output to webhook relay. It can be easily modified to include other digital output devices such as SMTP or SMS.
 
 #### Arduino ENDEC
 A simple Arduino LCD screen to show status info. Controlled by serial output from the host machine.
