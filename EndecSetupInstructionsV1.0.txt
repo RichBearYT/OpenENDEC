@@ -1,0 +1,79 @@
+
+SAGE EAS ENDEC HARDWARE & SCRIPT SETUP/CONFIGURATION
+
+Written By: Evan Vander Stoep
+Updated: 3/22/2020
+Manual Version: 1.0
+
+
+
+
+--------------- HARDWARE SETUP ---------------
+
+First we want to set the type of device the endec will be outputing to.
+
+---
+
+From the frount panel, go to:
+
+MENU > DEVICES > COM2 (CHOSE ANY COM PORT YOU WANT TO USE) > DEVICE TYPE > NEWSFEED > (Press enter, then enter the admin passcode)
+
+---
+
+Then set the Baud Rate by going to:
+
+MENU > DEVICES > COM2 (CHOSE THE COM PORT YOUR USING IN STEP 1) > DEVICE TYPE > BAUD RATE > 9600 > (Press enter, then enter the admin passcode)
+
+Now the ENDEC is setup!
+
+---------------
+You need to make a cable that goes to the COM Port that you chose, to the PC's serial input. 
+
+(NOTE: If you dont have a serial port on your computer, you can buy an 'RS-232 to USB' adapter.)
+
+The cable is a standerd NULL MODEM CABLE.
+Each side of the cable is a male DB-9 connector.
+Pins 2 & 3 are swaped from each end of the cable.
+
+ Pinout
+ 1 - 1
+ 2 - 3
+ 3 - 2
+ 4 - 4
+ 5 - 5
+ 6 - 6
+ 7 - 7
+ 8 - 8
+
+(NOTE: Leave pin 9 disconected, it have accesery power that could fry the PC COM port!)
+
+
+
+
+--------------- SOFTWARE SETUP ---------------
+
+First Install Python
+
+Download the endec.py script from the github page.
+
+Edit the script using an editor. (Python or Notepad will work just fine)
+
+Go to device manager and find what com port your using on your PC.
+Findthe example line below and change the value between the quotes to the com port your using, in the example below, were using "COM1" on the PC.
+
+device = "COM1"
+
+On the line below change the value between the quotes to the webhook link your using. (This script will make a POST request to the given link)
+
+webhook = "webhook url goes here"
+
+
+Now SAVE and EXIT the python script.
+
+---
+
+Go to the endec.py script and run it.
+
+Make your ENDEC send a weekily test and if it comes through, your done!!!
+
+
