@@ -10,4 +10,4 @@ A simple Arduino LCD screen to show status info. Controlled by serial output fro
 #### Credits
 [Emma Hones](https://github.com/kernelpanic3) for the original News Feed to webhook script.
 
-[MrCre8ive](https://github.com/MrCre8ive) for hardware support and testing.
+[Evan Vander Stoep](https://github.com/EvanVS) for hardware support and testing.
