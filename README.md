@@ -10,6 +10,6 @@ Open source digital ENDEC Emergency Alert System Controller
 A simple Arduino LCD screen to show status info. Controlled by serial output from the host machine.
 
 #### Credits
-[Emma Hones](https://github.com/kernelpanic3) for the original News Feed to webhook script.
+[Emma Hones](https://github.com/kernelpanic3) for the original endec interfacing to webhook script.
 
-[Evan Vander Stoep](https://github.com/EvanVS) for hardware support and testing.
+[Evan Vander Stoep](https://github.com/EvanVS) for hardware design, documentation and testing.
