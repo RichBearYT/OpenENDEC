@@ -1,0 +1,21 @@
+# config.yml
+# OpenENDEC Configuration File
+
+endec:
+  model: SAGE_1822   # Supported models are currently the SAGE_1822
+  port: /dev/ttyACM0 # Serial port
+  baud: 9600         # Serial baud rate
+
+outputs:
+  email: # You may remove this block entirely to disable email output.
+    username: eas@example.com
+    password: your-super-secure-email-password
+    server: smtp.gmail.com
+    port: 465
+
+    recepients:
+      - user1@example.com
+      - 1234567890@example.com # An imaginary email to SMS gateway, real ones can be found online on a per-carrier basis
+
+  discord: # You may remove this block entirely to disable discord output.
+    webhook: https://discordapp.com/api/webhooks/012345567890/thisisntactuallyarealwebhook
