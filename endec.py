@@ -1,18 +1,15 @@
 #!/usr/bin/python3
-# openendec.py
+# endec.py
 #
 # OpenENDEC
 # License: GNU General Public License v3.0
 
-
 import time
 import serial
-import traceback
 import requests
 
 device = "COM1"
 webhook = "webhook url goes here"
-delay = 2.5
 
 # Initialize the serial device
 ser = serial.Serial(device, 9600)
@@ -38,4 +35,4 @@ while True:
 
     else:
         output = ""
-        time.sleep(delay)
+        time.sleep(3)
