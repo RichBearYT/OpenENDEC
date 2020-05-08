@@ -6,7 +6,7 @@ import yaml
 import constants
 
 with open("config.yml") as config_file:
-    data = yaml.load(config_file, Loader=yaml.FullLoader)
+    data = yaml.safe_loads(config_file, Loader=yaml.FullLoader)
 
     # Begin ENDEC configuration
 
